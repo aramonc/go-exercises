@@ -1,28 +1,11 @@
 package main
 
-import (
-	"fmt"
-	"strconv"
-)
+import "github.com/aramonc/go-exercises/fizzBuzz"
 
 func main() {
-	output := ""
 
-	for n := 1; n <= 100; n++ {
-		if n%3 == 0 {
-			output += "Fizz"
-		}
+	// Run FizzBuzz exercise
+	fizzBuzz.Execute()
 
-		if n%5 == 0 {
-			output += "Buzz"
-		}
 
-		if len(output) == 0 {
-			output = strconv.Itoa(n)
-		}
-
-		fmt.Println(output)
-
-		output = ""
-	}
 }
